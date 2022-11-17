@@ -50,7 +50,7 @@ body{
 .lightgreen{
     background-color: lightgreen;
 }
-.lightyellow{
+.yellow{
     background-color: yellow;
 }
 .black{
@@ -118,19 +118,27 @@ body{
 }
 .ticket-color{
     height: 1rem;
-    background-color: lightpink;
 }
 .ticket-id{
     height: 2rem;
     padding: 0.5rem;
 }
 .task-area{
-    height: calc(100% - 1rem - 2rem);
+    height: calc(100% - 1rem - 2rem - 2rem);
     padding: 0.5rem;
+    outline: none;
 }
 .main-cont{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 2rem;
+}
+.ticket-lock{
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    color: #273c75;
 }
