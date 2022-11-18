@@ -1,36 +1,42 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
 }
-.toolbox-container{
+
+.toolbox-container {
     height: 5rem;
     background-color: #192a56;
     display: flex;
     align-items: center;
 }
-.toolbox-container > *{
+
+.toolbox-container>* {
     margin-left: 4rem;
     border-radius: 2px;
 }
-.toolbox-priority-container{
+
+.toolbox-priority-container {
     height: 3.5rem;
     width: 16rem;
     background-color: #273c75;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
 }
-.action-btn-container{
+
+.action-btn-container {
     height: 3.5rem;
     width: 8rem;
     background-color: #273c75;
     display: flex;
 }
-.action-btn-container > * {
+
+.action-btn-container>* {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -38,31 +44,39 @@ body{
     font-size: 2rem;
     color: #ced6e0;
 }
-.color{
+
+.color {
     height: 1.5rem;
     width: 2.5rem;
     background-color: lightsalmon;
     border-radius: 2px;
 }
-.lightpink{
+
+.lightpink {
     background-color: lightpink;
 }
-.lightgreen{
+
+.lightgreen {
     background-color: lightgreen;
 }
-.yellow{
+
+.yellow {
     background-color: yellow;
 }
-.black{
+
+.black {
     background-color: black;
 }
-.add-btn:hover{
+
+.add-btn:hover {
     background-color: #747d8c;
 }
-.remove-btn:hover{
+
+.remove-btn:hover {
     background-color: #747d8c;
 }
-.modal-cont{
+
+.modal-cont {
     height: 50vh;
     width: 45vw;
     background-color: lightblue;
@@ -70,9 +84,10 @@ body{
     top: calc((100vh - 50vh)/2);
     left: calc((100vw - 45vw)/2);
     display: none;
-
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-.textarea-cont{
+
+.textarea-cont {
     height: 100%;
     width: 75%;
     border: none;
@@ -82,8 +97,9 @@ body{
     padding: 2rem;
     font-size: 1.5rem;
 }
-.priority-colors-cont{
-    height:100%;
+
+.priority-colors-cont {
+    height: 100%;
     width: 25%;
     background-color: #192a56;
     display: flex;
@@ -91,54 +107,122 @@ body{
     justify-content: space-around;
     align-items: center;
 }
-.priority-color{
+
+.priority-color {
     height: 3rem;
     width: 60%;
     border-radius: 5px;
 }
-.lightpink{
+
+.lightpink {
     background-color: lightpink;
 }
-.lightgreen{
+
+.lightgreen {
     background-color: lightgreen;
 }
-.yellow{
+
+.yellow {
     background-color: yellow;
 }
-.black{
+
+.black {
     background-color: black;
 }
-.border{
+
+.border {
     border: 3px solid #dfe4ea;
 }
-.ticket-cont{
+
+.ticket-cont {
     height: 12rem;
     width: 17rem;
     background-color: #f1f2f6;
 }
-.ticket-color{
+
+.ticket-color {
     height: 1rem;
 }
-.ticket-id{
+
+.ticket-id {
     height: 2rem;
     padding: 0.5rem;
 }
-.task-area{
+
+.task-area {
     height: calc(100% - 1rem - 2rem - 2rem);
     padding: 0.5rem;
     outline: none;
 }
-.main-cont{
+
+.main-cont {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 2rem;
 }
-.ticket-lock{
+
+.ticket-lock {
     height: 2rem;
     display: flex;
     justify-content: flex-end;
     font-size: 1.5rem;
     padding-right: 1rem;
     color: #273c75;
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    .modal-cont {
+        width: 60vw;
+        left: calc((100vw - 60vw)/2);
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .modal-cont {
+        width: 60vw;
+        left: calc((100vw - 60vw)/2);
+        flex-direction: column;
+    }
+
+    .textarea-cont {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .priority-colors-cont {
+        flex-direction: row-reverse;
+        width: 100%;
+        height: 35%;
+        justify-content: space-around;
+    }
+
+    .priority-color {
+        width: 20%;
+        height: 2.6rem;
+    }
+
+    .toolbox-container>* {
+        margin-left: 2rem;
+        border-radius: 2px;
+        justify-content: space-around;
+    }
+
+    .action-btn-container {
+        height: 3rem;
+        margin-right: 1rem;
+    }
+
+    .action-btn-container>* {
+        font-size: 1.5rem;
+    }
+
+    .toolbox-priority-container {
+        height: 3rem;
+        justify-content: space-around;
+    }
+
+    .color {
+        width: 2rem;
+    }
 }
