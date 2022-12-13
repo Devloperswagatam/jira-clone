@@ -24,13 +24,13 @@ In the created tickets you can see a unique is also present, which we provided f
 In my web page I provided four unique colors, to generate tickets.
 
 #Filtering: 
-There is one feature in the nav bar, I provided a section containing all four unique colors, so that you can filter out your expected color ticket. To use this just click on your expected color and it will filter out all the tickets of your expected color. And to undo this just double click on the same section.
+There is one feature in the nav bar, I provided a section containing all four unique colors, so that you can filter out your expected color ticket. To use this just click oon your expected color and it will filter out all the tickets of your expected color. And to undo this just double click on the same section.
 
 #color change: 
-Now if you want to change your ticket color, we have also provided a feature for that also, just click on your ticket color and it will change.
+Now if you u want to change your ticket color, we have also provided a feature for that also, just click on your ticket color and it will change.
 
 #Lock-unlock Option: 
-In your generated tickets you can see a lock symbol at the bottom right corner, it means your task is locked and you can't make any changes. To make changes in your task you have to click on the lock symbol, it will change to unlock symbol, it means now you can make changes to your task. After making changes again click on unlock symbol to lock it.   
+In your generated tickets you can a lock symbol at the bottom right corner, it means your task is locked and you can't make any changes. To make changes in your task you have to click on the lock symbol, it will change to unlock symbol, it means now you can make changes to your task. After making changes again click on unlock symbol to lock it.   
 
 #Storage: 
-For my project I have used my browser local storage. So there is no loss of data. I have used JSON method to excess my local storage.
+For my project I hav used my browsers local storage. So theres no lost of data. I have used JSON method to excess my local storage.

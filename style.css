@@ -2,9 +2,69 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+}
+
+.sidebar{
+    width: 100vw;
+    max-height: 100vh;
+    display: flex;
+
+}
+.sidebar .box{
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    background-color: #273c75;
+    z-index: 4;
+    transition: all 300ms ease;
+}
+.sidebar .box-shadow{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    opacity: 0.5;
+    display: none;
+    transition: all 300ms ease;
+}
+
+.toolbox-container .logo{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.toolbox-container .logo i{
+    font-size: 25px;
+    color: #ced6e0;
+    cursor: pointer;
+}
+
+nav .logo .name{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+nav .logo .name h3{
+    color: #ced6e0;
+    font-size: 20px;
 }
 
 .toolbox-container {
@@ -12,6 +72,8 @@ body {
     background-color: #192a56;
     display: flex;
     align-items: center;
+    position: fixed;
+    width: 100vw;
 }
 
 .toolbox-container>* {
@@ -26,7 +88,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    cursor: pointer;
 }
 
 .action-btn-container {
@@ -34,6 +96,7 @@ body {
     width: 8rem;
     background-color: #273c75;
     display: flex;
+    cursor: pointer;
 }
 
 .action-btn-container>* {
@@ -43,6 +106,26 @@ body {
     align-items: center;
     font-size: 2rem;
     color: #ced6e0;
+}
+
+.toolbox-container .profile{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: 30rem;
+    cursor: pointer;
+}
+.toolbox-container .profile i{
+    color: #ced6e0;
+}
+.toolbox-container .profile .profile-btn{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.toolbox-container .profile .profile-btn img{
+    border-radius: 50%;
+    border: 2px solid black;
 }
 
 .color {
@@ -142,24 +225,28 @@ body {
 
 .ticket-color {
     height: 1rem;
+    border-radius: 8px;
 }
 
 .ticket-id {
     height: 2rem;
     padding: 0.5rem;
+    color: #353b48;
 }
 
 .task-area {
     height: calc(100% - 1rem - 2rem - 2rem);
     padding: 0.5rem;
     outline: none;
+    color: #353b48;
 }
 
 .main-cont {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 2rem;
+    margin-left: 5rem;
+    gap: 2rem;
+    padding: 7rem;
 }
 
 .ticket-lock {

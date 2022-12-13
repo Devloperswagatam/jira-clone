@@ -213,3 +213,22 @@ function setmodaltodefault(){
 
     allprioritycolor[allprioritycolor.length-1].classList.add("border");
 }
+
+// SIDEBAR
+
+const menuBtn = document.getElementById('menu');
+const sidebar = document.querySelector('.box');
+const shadow = document.querySelector('.box-shadow');
+const body = document.querySelector('body');
+
+menuBtn.addEventListener('click', ()=> {
+    sidebar.style.left = '0';
+    shadow.style.display = 'block';
+    body.style.overflow = 'hidden';
+})
+
+shadow.addEventListener('click', ()=> {
+    sidebar.style.left = '-300px';
+    shadow.style.display = 'none';
+    body.style.overflow = 'scroll';
+})
