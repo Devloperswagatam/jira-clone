@@ -247,6 +247,7 @@ nav .logo .name h3{
     margin-left: 5rem;
     gap: 2rem;
     padding: 7rem;
+    /* transition: all 500ms ease; */
 }
 
 .ticket-lock {
